@@ -1,7 +1,6 @@
 # Systolic Array Implementation Report
 
-**Student Name:** Abdullah Omar Elazhary  
-**Phone Number:** 01149694330  
+**Student Name:** Abdullah Omar Elazhary   
 
 ---
 
@@ -9,7 +8,7 @@
 
 ### Detailed Architecture Diagram
 
-![IMAGE_HERE]
+![PE_block_diagram](images/PE_block_diagram.png)
 
 The Processing Element (PE) is the basic building block of our systolic array. Each PE contains:
 
