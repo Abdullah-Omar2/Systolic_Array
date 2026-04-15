@@ -16,7 +16,9 @@ The Processing Element (PE) is the basic building block of our systolic array. E
 - **Adder:** Adds multiplication result to accumulated value  
 - **C Register:** Stores the accumulated result (partial sum)  
 - **A Register:** Delays input A by one clock cycle for next PE  
-- **B Register:** Delays input B by one clock cycle for next PE  
+- **B Register:** Delays input B by one clock cycle for next PE
+
+![SA_block_diagram](images/SA_block_diagram.png)  
 
 ---
 
@@ -26,7 +28,7 @@ The 5×5 systolic array consists of 25 PEs arranged in a grid. Data flows as fol
 - Matrix B elements enter from the top and flow vertically  
 - Each PE accumulates partial products to compute one element of result matrix C  
 
-![IMAGE_HERE]
+![Indexing](images/Indexing.png) 
 
 Pipeline registers are used to properly align the timing of matrix elements. The indexing ensures that corresponding A and B elements arrive at each PE simultaneously.
 
@@ -100,6 +102,8 @@ Pipeline registers provide necessary delays to align matrix data timing.
 ## Simulation Results
 
 ### Testbench Design
+
+![WF](images/WF.png) 
 
 The testbench includes three levels of testing:
 
